@@ -3,7 +3,7 @@ language: objective-c
 sudo: required
 
 script:
-  -xcodebuild clean build test
+  - xcodebuild clean build test
     -project "DevapexFrame.xcodeproj"
     -scheme "DevapexFrame"
     -sdk "iphonesimulator10.3"
