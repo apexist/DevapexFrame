@@ -8,12 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		765A1E991F0A784500700915 /* DevapexFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 765A1E971F0A784500700915 /* DevapexFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		765A1EA61F0A792700700915 /* DevapexFrameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A1EA51F0A792700700915 /* DevapexFrameTests.swift */; };
+		765A1EA81F0A792700700915 /* DevapexFrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 765A1E941F0A784500700915 /* DevapexFrame.framework */; };
+		765A1EAF1F0A7CC600700915 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A1EAE1F0A7CC600700915 /* UIView+Frame.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		765A1EA91F0A792700700915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 765A1E8B1F0A784500700915 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 765A1E931F0A784500700915;
+			remoteInfo = DevapexFrame;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		765A1E941F0A784500700915 /* DevapexFrame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DevapexFrame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		765A1E971F0A784500700915 /* DevapexFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DevapexFrame.h; sourceTree = "<group>"; };
 		765A1E981F0A784500700915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		765A1EA31F0A792700700915 /* DevapexFrameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevapexFrameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		765A1EA51F0A792700700915 /* DevapexFrameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevapexFrameTests.swift; sourceTree = "<group>"; };
+		765A1EA71F0A792700700915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		765A1EAE1F0A7CC600700915 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +41,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		765A1EA01F0A792700700915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				765A1EA81F0A792700700915 /* DevapexFrame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				765A1E961F0A784500700915 /* DevapexFrame */,
+				765A1EA41F0A792700700915 /* DevapexFrameTests */,
 				765A1E951F0A784500700915 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				765A1E941F0A784500700915 /* DevapexFrame.framework */,
+				765A1EA31F0A792700700915 /* DevapexFrameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,8 +75,18 @@
 			children = (
 				765A1E971F0A784500700915 /* DevapexFrame.h */,
 				765A1E981F0A784500700915 /* Info.plist */,
+				765A1EAE1F0A7CC600700915 /* UIView+Frame.swift */,
 			);
 			path = DevapexFrame;
+			sourceTree = "<group>";
+		};
+		765A1EA41F0A792700700915 /* DevapexFrameTests */ = {
+			isa = PBXGroup;
+			children = (
+				765A1EA51F0A792700700915 /* DevapexFrameTests.swift */,
+				765A1EA71F0A792700700915 /* Info.plist */,
+			);
+			path = DevapexFrameTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,16 +121,40 @@
 			productReference = 765A1E941F0A784500700915 /* DevapexFrame.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		765A1EA21F0A792700700915 /* DevapexFrameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 765A1EAB1F0A792700700915 /* Build configuration list for PBXNativeTarget "DevapexFrameTests" */;
+			buildPhases = (
+				765A1E9F1F0A792700700915 /* Sources */,
+				765A1EA01F0A792700700915 /* Frameworks */,
+				765A1EA11F0A792700700915 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				765A1EAA1F0A792700700915 /* PBXTargetDependency */,
+			);
+			name = DevapexFrameTests;
+			productName = DevapexFrameTests;
+			productReference = 765A1EA31F0A792700700915 /* DevapexFrameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		765A1E8B1F0A784500700915 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Junghoon Lee";
 				TargetAttributes = {
 					765A1E931F0A784500700915 = {
+						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					765A1EA21F0A792700700915 = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -112,12 +173,20 @@
 			projectRoot = "";
 			targets = (
 				765A1E931F0A784500700915 /* DevapexFrame */,
+				765A1EA21F0A792700700915 /* DevapexFrameTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		765A1E921F0A784500700915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		765A1EA11F0A792700700915 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -131,10 +200,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				765A1EAF1F0A7CC600700915 /* UIView+Frame.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		765A1E9F1F0A792700700915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				765A1EA61F0A792700700915 /* DevapexFrameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		765A1EAA1F0A792700700915 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 765A1E931F0A784500700915 /* DevapexFrame */;
+			targetProxy = 765A1EA91F0A792700700915 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		765A1E9A1F0A784500700915 /* Debug */ = {
@@ -241,6 +327,27 @@
 		765A1E9D1F0A784500700915 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DevapexFrame/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.apexist.DevapexFrame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		765A1E9E1F0A784500700915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -254,22 +361,28 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
-			name = Debug;
+			name = Release;
 		};
-		765A1E9E1F0A784500700915 /* Release */ = {
+		765A1EAC1F0A792700700915 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DevapexFrame/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DevapexFrameTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kr.apexist.DevapexFrame;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.apexist.DevapexFrameTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		765A1EAD1F0A792700700915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DevapexFrameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.apexist.DevapexFrameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -291,6 +404,14 @@
 			buildConfigurations = (
 				765A1E9D1F0A784500700915 /* Debug */,
 				765A1E9E1F0A784500700915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		765A1EAB1F0A792700700915 /* Build configuration list for PBXNativeTarget "DevapexFrameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				765A1EAC1F0A792700700915 /* Debug */,
+				765A1EAD1F0A792700700915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

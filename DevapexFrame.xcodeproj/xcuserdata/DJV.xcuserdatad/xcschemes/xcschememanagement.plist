@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DevapexFrame.xcscheme</key>
+		<key>DevapexFrame.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -13,6 +13,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>765A1E931F0A784500700915</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>765A1EA21F0A792700700915</key>
 		<dict>
 			<key>primary</key>
 			<true/>
